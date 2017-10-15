@@ -8,6 +8,6 @@ See code outputs:
 
 * https://melindahiggins2000.github.io/N736Fall2017_lesson1415/SPSS_modexOutput.htm
 
-* https://melindahiggins2000.github.io/N736Fall2017_lesson1415/SAS Output_htm#IDX118.htm
+* https://melindahiggins2000.github.io/N736Fall2017_lesson1415/SASoutput_modex.htm
 
 
