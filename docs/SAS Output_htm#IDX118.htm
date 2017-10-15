@@ -1,0 +1,4817 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001">
+<META content="text/html; charset=windows-1252" http-equiv=Content-type>
+<STYLE type=text/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: #fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=body onload=startup() onunload=shutdown()>
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=branch><A name=IDX></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CONTENTS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Attributes" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Name</TH>
+    <TD class="l data">WORK.MODEX</TD>
+    <TH class="l rowheader" scope=row>Observations</TH>
+    <TD class="l data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Member Type</TH>
+    <TD class="l data">DATA</TD>
+    <TH class="l rowheader" scope=row>Variables</TH>
+    <TD class="l data">7</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD>
+    <TH class="l rowheader" scope=row>Indexes</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created</TH>
+    <TD class="l data">10/15/2017 09:02:12</TD>
+    <TH class="l rowheader" scope=row>Observation Length</TH>
+    <TD class="l data">56</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Last Modified</TH>
+    <TD class="l data">10/15/2017 09:02:12</TD>
+    <TH class="l rowheader" scope=row>Deleted Observations</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Protection</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Compressed</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Type</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Sorted</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Label</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Representation</TH>
+    <TD class="l data">WINDOWS_64</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Encoding</TH>
+    <TD class="l data">wlatin1 Western (Windows)</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX1></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Engine/Host Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Engine/Host Dependent 
+      Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Page Size</TH>
+    <TD class="l data">65536</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Pages</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>First Data Page</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Page</TH>
+    <TD class="l data">1167</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Obs in First Data Page</TH>
+    <TD class="l data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Repairs</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExtendObsCounter</TH>
+    <TD class="l data">YES</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD class="l data">C:\Users\MKHIGGI\AppData\Local\Temp\SAS Temporary 
+      Files\_TD12408_SON-HIGGINS_\modex.sas7bdat</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Release Created</TH>
+    <TD class="l data">9.0401M1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Host Created</TH>
+    <TD class="l data">X64_8PRO</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX2></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Variables" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Alphabetic List of 
+      Variables and Attributes</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="l b header" scope=col>Type</TH>
+    <TH class="r b header" scope=col>Len</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">Age</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">AgeC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="l data">AgeCxExerciseC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">Endurance</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">Exercise</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="l data">ExerciseC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">SampleID</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">Sample Number</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX3></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>N</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH>
+    <TH class="r b header" scope=col>Minimum</TH>
+    <TH class="r b header" scope=col>Maximum</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l data top_stacked_value">Endurance</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">Age</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">AgeC</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">Exercise</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">ExerciseC</TH></TR>
+        <TR>
+          <TH 
+      class="l data bottom_stacked_value">AgeCxExerciseC</TH></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">245</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">26.5306122</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">49.1836735</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.0036735</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.6734694</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.0034694</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">13.5865184</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">10.8191202</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.1069556</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.1069556</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">4.7752253</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">4.7752253</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">46.0099677</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">20.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value" noWrap>-29.1800000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value" noWrap>-10.6700000</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value" 
+        noWrap>-131.5494000</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">55.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">82.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">32.8200000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">26.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">15.3300000</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">174.9606000</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX4></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX5></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">3.91</TD>
+    <TD class="r data">0.0491</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">243</TD>
+    <TD class="r data">28109</TD>
+    <TD class="r data">115.67344</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX6></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">10.75516</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.0158</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.0118</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">40.53867</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX7></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">33.15667</TD>
+    <TD class="r data">3.42033</TD>
+    <TD class="r data">9.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Age</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.13472</TD>
+    <TD class="r data">0.06812</TD>
+    <TD class="r data" noWrap>-1.98</TD>
+    <TD class="r data">0.0491</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX8></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel.png"> </DIV></DIV><BR><A 
+name=IDX9></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatter plot of residuals by Age for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot.png"> </DIV></DIV><BR><A 
+name=IDX10></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatterplot of Endurance by Age overlaid with the fit line, a 95% confidence band and lower and upper 95% prediction limits." 
+src="SAS%20Output_htm%23IDX118_files/FitPlot.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX11></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX12></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">3.91</TD>
+    <TD class="r data">0.0491</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">243</TD>
+    <TD class="r data">28109</TD>
+    <TD class="r data">115.67344</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX13></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">10.75516</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.0158</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.0118</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">40.53867</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX14></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">26.53111</TD>
+    <TD class="r data">0.68712</TD>
+    <TD class="r data">38.61</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.13472</TD>
+    <TD class="r data">0.06812</TD>
+    <TD class="r data" noWrap>-1.98</TD>
+    <TD class="r data">0.0491</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX15></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel1.png"> </DIV></DIV><BR><A 
+name=IDX16></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatter plot of residuals by AgeC for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot1.png"> </DIV></DIV><BR><A 
+name=IDX17></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatterplot of Endurance by AgeC overlaid with the fit line, a 95% confidence band and lower and upper 95% prediction limits." 
+src="SAS%20Output_htm%23IDX118_files/FitPlot1.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX18></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Analysis Variable : 
+      ExerciseC </TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Lower Quartile</TH>
+    <TH class="r b header" scope=col>Median</TH>
+    <TH class="r b header" scope=col>Upper Quartile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data" noWrap>-3.6700000</TD>
+    <TD class="r data">0.3300000</TD>
+    <TD class="r data">3.3300000</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX19></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Analysis Variable : AgeC 
+    </TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Lower Quartile</TH>
+    <TH class="r b header" scope=col>Median</TH>
+    <TH class="r b header" scope=col>Upper Quartile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data" noWrap>-6.1800000</TD>
+    <TD class="r data" noWrap>-1.1800000</TD>
+    <TD class="r data">6.8200000</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX20></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Analysis Variable : AgeC 
+    </TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.0036735</TD>
+    <TD class="r data">10.1069556</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX21></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX22></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">&nbsp;</DIV>
+<DIV class="l proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of Squares</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22673.78622</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561.02041</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX23></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>R-Square</TH>
+    <TH class="r b header" scope=col>Coeff Var</TH>
+    <TH class="r b header" scope=col>Root MSE</TH>
+    <TH class="r b header" scope=col>Endurance&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.206128</TD>
+    <TD class="r data">36.56000</TD>
+    <TD class="r data">9.699593</TD>
+    <TD class="r data">26.53061</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX24></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type I Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Type I SS</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">4.81</TD>
+    <TD class="r data">0.0293</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">45.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX25></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Type III SS</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX26></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Solution" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88630854</TD>
+    <TD class="r data">0.64663327</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185368</TD>
+    <TD class="r data">0.06406483</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254170</TD>
+    <TD class="r data">0.13652678</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">0.04724474</TD>
+    <TD class="r data">0.01359293</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX27></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 540px" border=0 
+alt="Contour Fit Plot for Endurance" 
+src="SAS%20Output_htm%23IDX118_files/ContourFit.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX28></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Plm: Store Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Store 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Item Store</TH>
+    <TD class="l data">WORK.GLMMODEL</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Created From</TH>
+    <TD class="l data">WORK.MODEX</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created By</TH>
+    <TD class="l data">PROC GLM</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Date Created</TH>
+    <TD class="l data">15OCT17:09:41:38</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Response Variable</TH>
+    <TD class="l data">Endurance</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Model Effects</TH>
+    <TD class="l data">Intercept AgeC ExerciseC 
+AgeC*ExerciseC</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX29></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Plm: Store Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Store 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Item Store</TH>
+    <TD class="l data">WORK.GLMMODEL</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Created From</TH>
+    <TD class="l data">WORK.MODEX</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created By</TH>
+    <TD class="l data">PROC GLM</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Date Created</TH>
+    <TD class="l data">15OCT17:09:41:38</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Response Variable</TH>
+    <TD class="l data">Endurance</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Model Effects</TH>
+    <TD class="l data">Intercept AgeC ExerciseC 
+AgeC*ExerciseC</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX30></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Fit Panel for Endurance by ExerciseC with 95% Confidence and Prediction Limits" 
+src="SAS%20Output_htm%23IDX118_files/FitPanel.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX31></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Plm: Store Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Store 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Item Store</TH>
+    <TD class="l data">WORK.GLMMODEL</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Created From</TH>
+    <TD class="l data">WORK.MODEX</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created By</TH>
+    <TD class="l data">PROC GLM</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Date Created</TH>
+    <TD class="l data">15OCT17:09:41:38</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Response Variable</TH>
+    <TD class="l data">Endurance</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Model Effects</TH>
+    <TD class="l data">Intercept AgeC ExerciseC 
+AgeC*ExerciseC</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX32></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Fit Panel for Endurance by ExerciseC with 95% Confidence and Prediction Limits" 
+src="SAS%20Output_htm%23IDX118_files/FitPanel1.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX33></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX34></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">&nbsp;</DIV>
+<DIV class="l proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of Squares</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22673.78622</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561.02041</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX35></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>R-Square</TH>
+    <TH class="r b header" scope=col>Coeff Var</TH>
+    <TH class="r b header" scope=col>Root MSE</TH>
+    <TH class="r b header" scope=col>Endurance&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.206128</TD>
+    <TD class="r data">36.56000</TD>
+    <TD class="r data">9.699593</TD>
+    <TD class="r data">26.53061</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX36></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall Effect Size" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Overall 
+  Noncentrality</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Min Var Unbiased Estimate</TH>
+    <TD class="l data">59.056</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Low MSE Estimate</TH>
+    <TD class="l data">58.562</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>95% Confidence Limits</TH>
+    <TD class="l data">(32.128,97.51)</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX37></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall Effect Size" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Proportion of Variation 
+      Accounted for</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Eta-Square</TH>
+    <TD class="l data">0.21</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Omega-Square</TH>
+    <TD class="l data">0.20</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>95% Confidence Limits</TH>
+    <TD class="l data">(0.12,0.28)</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX38></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type I Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" rowSpan=2 scope=col>Source</TH>
+    <TH class="r b header" rowSpan=2 scope=col>DF</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Type I SS</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Mean Square</TH>
+    <TH class="r b header" rowSpan=2 scope=col>F Value</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Pr&nbsp;&gt;&nbsp;F</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Noncentrality Parameter</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Total Variation Accounted 
+      For</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Partial Variation 
+      Accounted For</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Min Var Unbiased<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Low MSE Estimate</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence Limits</TH>
+    <TH class="r b header" scope=col>Semipartial Eta-Square</TH>
+    <TH class="r b header" scope=col>Semipartial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Conservative<BR>95% 
+      Confidence Limits</TH>
+    <TH class="r b header" scope=col>Partial Eta-Square</TH>
+    <TH class="r b header" scope=col>Partial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence 
+  Limits</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">4.81</TD>
+    <TD class="r data">0.0293</TD>
+    <TD class="r data">3.77</TD>
+    <TD class="r data">3.74</TD>
+    <TD class="r data">0.00</TD>
+    <TD class="r data">17.3</TD>
+    <TD class="r data">0.0158</TD>
+    <TD class="r data">0.0125</TD>
+    <TD class="r data">0.0000</TD>
+    <TD class="r data">0.0597</TD>
+    <TD class="r data">0.0196</TD>
+    <TD class="r data">0.0153</TD>
+    <TD class="r data">0.0000</TD>
+    <TD class="r data">0.0660</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">45.69</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">44.31</TD>
+    <TD class="r data">43.94</TD>
+    <TD class="r data">22.11</TD>
+    <TD class="r data">77.5</TD>
+    <TD class="r data">0.1505</TD>
+    <TD class="r data">0.1467</TD>
+    <TD class="r data">0.0767</TD>
+    <TD class="r data">0.2319</TD>
+    <TD class="r data">0.1594</TD>
+    <TD class="r data">0.1543</TD>
+    <TD class="r data">0.0828</TD>
+    <TD class="r data">0.2403</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD>
+    <TD class="r data">10.98</TD>
+    <TD class="r data">10.89</TD>
+    <TD class="r data">2.21</TD>
+    <TD class="r data">29.8</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.0364</TD>
+    <TD class="r data">0.0057</TD>
+    <TD class="r data">0.0977</TD>
+    <TD class="r data">0.0477</TD>
+    <TD class="r data">0.0433</TD>
+    <TD class="r data">0.0090</TD>
+    <TD class="r data">0.1084</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX39></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" rowSpan=2 scope=col>Source</TH>
+    <TH class="r b header" rowSpan=2 scope=col>DF</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Type III SS</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Mean Square</TH>
+    <TH class="r b header" rowSpan=2 scope=col>F Value</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Pr&nbsp;&gt;&nbsp;F</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Noncentrality Parameter</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Total Variation Accounted 
+      For</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Partial Variation 
+      Accounted For</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Min Var Unbiased<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Low MSE Estimate</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence Limits</TH>
+    <TH class="r b header" scope=col>Semipartial Eta-Square</TH>
+    <TH class="r b header" scope=col>Semipartial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Conservative<BR>95% 
+      Confidence Limits</TH>
+    <TH class="r b header" scope=col>Partial Eta-Square</TH>
+    <TH class="r b header" scope=col>Partial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence 
+  Limits</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">15.6</TD>
+    <TD class="r data">15.4</TD>
+    <TD class="r data">4.37</TD>
+    <TD class="r data">36.9</TD>
+    <TD class="r data">0.0550</TD>
+    <TD class="r data">0.0516</TD>
+    <TD class="r data">0.0126</TD>
+    <TD class="r data">0.1188</TD>
+    <TD class="r data">0.0648</TD>
+    <TD class="r data">0.0602</TD>
+    <TD class="r data">0.0175</TD>
+    <TD class="r data">0.1310</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">49.3</TD>
+    <TD class="r data">48.9</TD>
+    <TD class="r data">25.57</TD>
+    <TD class="r data">84.2</TD>
+    <TD class="r data">0.1672</TD>
+    <TD class="r data">0.1633</TD>
+    <TD class="r data">0.0900</TD>
+    <TD class="r data">0.2498</TD>
+    <TD class="r data">0.1739</TD>
+    <TD class="r data">0.1688</TD>
+    <TD class="r data">0.0945</TD>
+    <TD class="r data">0.2558</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD>
+    <TD class="r data">11.0</TD>
+    <TD class="r data">10.9</TD>
+    <TD class="r data">2.21</TD>
+    <TD class="r data">29.8</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.0364</TD>
+    <TD class="r data">0.0057</TD>
+    <TD class="r data">0.0977</TD>
+    <TD class="r data">0.0477</TD>
+    <TD class="r data">0.0433</TD>
+    <TD class="r data">0.0090</TD>
+    <TD class="r data">0.1084</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX40></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Solution" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88630854</TD>
+    <TD class="r data">0.64663327</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185368</TD>
+    <TD class="r data">0.06406483</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254170</TD>
+    <TD class="r data">0.13652678</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">0.04724474</TD>
+    <TD class="r data">0.01359293</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX41></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 540px" border=0 
+alt="Contour Fit Plot for Endurance" 
+src="SAS%20Output_htm%23IDX118_files/ContourFit1.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX42></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX43></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22674</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX44></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">9.69959</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.2061</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.1962</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">36.56000</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX45></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">25.88631</TD>
+    <TD class="r data">0.64663</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.26185</TD>
+    <TD class="r data">0.06406</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.97254</TD>
+    <TD class="r data">0.13653</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeCxExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.04724</TD>
+    <TD class="r data">0.01359</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX46></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel2.png"> </DIV></DIV><BR><A 
+name=IDX47></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot2.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX48></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Forward Selection: Step 
+0</TD></TR></TBODY></TABLE></DIV>
+<P>
+<P><A name=IDX49></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">First 2 Vars Entered: R-Square = 0.1663 and C(p) = 
+      14.0804</TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">4750.68647</TD>
+    <TD class="r data">2375.34324</TD>
+    <TD class="r data">24.14</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">242</TD>
+    <TD class="r data">23810</TD>
+    <TD class="r data">98.38981</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX50></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>&nbsp;</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Type&nbsp;II&nbsp;SS</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">26.52838</TD>
+    <TD class="r data">0.63371</TD>
+    <TD class="r data">172420</TD>
+    <TD class="r data">1752.42</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.25709</TD>
+    <TD class="r data">0.06550</TD>
+    <TD class="r data">1515.82496</TD>
+    <TD class="r data">15.41</TD>
+    <TD class="r data">0.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.91631</TD>
+    <TD class="r data">0.13863</TD>
+    <TD class="r data">4298.31088</TD>
+    <TD class="r data">43.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class="c b footer" 
+      colSpan=7>*&nbsp;Forced&nbsp;into&nbsp;the&nbsp;model&nbsp;by&nbsp;the&nbsp;INCLUDE=&nbsp;option</TH></TR></TFOOT></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Bounds on condition number: 1.0868, 
+  4.3473</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Forward Selection: Step 
+1</TD></TR></TBODY></TABLE></DIV>
+<P>
+<P><A name=IDX51></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Variable AgeCxExerciseC Entered: R-Square = 0.2061 
+      and C(p) = 4.0000</TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22674</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX52></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>&nbsp;</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Type&nbsp;II&nbsp;SS</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88631</TD>
+    <TD class="r data">0.64663</TD>
+    <TD class="r data">150776</TD>
+    <TD class="r data">1602.60</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185</TD>
+    <TD class="r data">0.06406</TD>
+    <TD class="r data">1571.75569</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254</TD>
+    <TD class="r data">0.13653</TD>
+    <TD class="r data">4774.05917</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>AgeCxExerciseC</TH>
+    <TD class="r data">0.04724</TD>
+    <TD class="r data">0.01359</TD>
+    <TD class="r data">1136.54772</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class="c b footer" 
+      colSpan=7>*&nbsp;Forced&nbsp;into&nbsp;the&nbsp;model&nbsp;by&nbsp;the&nbsp;INCLUDE=&nbsp;option</TH></TR></TFOOT></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Bounds on condition number: 1.1023, 
+  9.6122</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">All variables have been entered into the 
+  model.</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX53></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Selection Summary" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Summary of Forward 
+      Selection</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Step</TH>
+    <TH class="l b header" scope=col>Variable<BR>Entered</TH>
+    <TH class="r b header" scope=col>Number<BR>Vars In</TH>
+    <TH class="r b header" scope=col>Partial<BR>R-Square</TH>
+    <TH class="r b header" scope=col>Model<BR>R-Square</TH>
+    <TH class="r b header" scope=col>C(p)</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">AgeCxExerciseC</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.2061</TD>
+    <TD class="r data">4.0000</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX54></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel3.png"> </DIV></DIV><BR><A 
+name=IDX55></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot3.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX56></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX57></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22674</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX58></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">9.69959</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.2061</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.1962</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">36.56000</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX59></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">25.88631</TD>
+    <TD class="r data">0.64663</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.26185</TD>
+    <TD class="r data">0.06406</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.97254</TD>
+    <TD class="r data">0.13653</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeCxExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.04724</TD>
+    <TD class="r data">0.01359</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX60></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel4.png"> </DIV></DIV><BR><A 
+name=IDX61></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot4.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX62></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CONTENTS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Attributes" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Name</TH>
+    <TD class="l data">WORK.MODEX</TD>
+    <TH class="l rowheader" scope=row>Observations</TH>
+    <TD class="l data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Member Type</TH>
+    <TD class="l data">DATA</TD>
+    <TH class="l rowheader" scope=row>Variables</TH>
+    <TD class="l data">7</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD>
+    <TH class="l rowheader" scope=row>Indexes</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created</TH>
+    <TD class="l data">10/15/2017 10:47:26</TD>
+    <TH class="l rowheader" scope=row>Observation Length</TH>
+    <TD class="l data">56</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Last Modified</TH>
+    <TD class="l data">10/15/2017 10:47:26</TD>
+    <TH class="l rowheader" scope=row>Deleted Observations</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Protection</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Compressed</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Type</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Sorted</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Label</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Representation</TH>
+    <TD class="l data">WINDOWS_64</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Encoding</TH>
+    <TD class="l data">wlatin1 Western (Windows)</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX63></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Engine/Host Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Engine/Host Dependent 
+      Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Page Size</TH>
+    <TD class="l data">65536</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Pages</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>First Data Page</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Page</TH>
+    <TD class="l data">1167</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Obs in First Data Page</TH>
+    <TD class="l data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Repairs</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExtendObsCounter</TH>
+    <TD class="l data">YES</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD class="l data">C:\Users\MKHIGGI\AppData\Local\Temp\SAS Temporary 
+      Files\_TD12408_SON-HIGGINS_\modex.sas7bdat</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Release Created</TH>
+    <TD class="l data">9.0401M1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Host Created</TH>
+    <TD class="l data">X64_8PRO</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX64></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Variables" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Alphabetic List of 
+      Variables and Attributes</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="l b header" scope=col>Type</TH>
+    <TH class="r b header" scope=col>Len</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">Age</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">AgeC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>7</TH>
+    <TD class="l data">AgeCxExerciseC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">Endurance</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">Exercise</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="l data">ExerciseC</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">SampleID</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">Sample Number</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX65></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>N</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH>
+    <TH class="r b header" scope=col>Minimum</TH>
+    <TH class="r b header" scope=col>Maximum</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l data top_stacked_value">Endurance</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">Age</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">AgeC</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">Exercise</TH></TR>
+        <TR>
+          <TH class="l data middle_stacked_value">ExerciseC</TH></TR>
+        <TR>
+          <TH 
+      class="l data bottom_stacked_value">AgeCxExerciseC</TH></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">245</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">245</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">26.5306122</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">49.1836735</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.0036735</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.6734694</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0.0034694</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">13.5865184</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">10.8191202</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.1069556</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">10.1069556</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">4.7752253</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">4.7752253</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">46.0099677</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">20.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value" noWrap>-29.1800000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">0</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value" noWrap>-10.6700000</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value" 
+        noWrap>-131.5494000</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">55.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">82.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">32.8200000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">26.0000000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">15.3300000</TD></TR>
+        <TR>
+          <TD 
+      class="r data bottom_stacked_value">174.9606000</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX66></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX67></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">3.91</TD>
+    <TD class="r data">0.0491</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">243</TD>
+    <TD class="r data">28109</TD>
+    <TD class="r data">115.67344</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX68></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">10.75516</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.0158</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.0118</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">40.53867</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX69></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">33.15667</TD>
+    <TD class="r data">3.42033</TD>
+    <TD class="r data">9.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Age</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.13472</TD>
+    <TD class="r data">0.06812</TD>
+    <TD class="r data" noWrap>-1.98</TD>
+    <TD class="r data">0.0491</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX70></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel5.png"> </DIV></DIV><BR><A 
+name=IDX71></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatter plot of residuals by Age for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot5.png"> </DIV></DIV><BR><A 
+name=IDX72></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatterplot of Endurance by Age overlaid with the fit line, a 95% confidence band and lower and upper 95% prediction limits." 
+src="SAS%20Output_htm%23IDX118_files/FitPlot2.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX73></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX74></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">452.37559</TD>
+    <TD class="r data">3.91</TD>
+    <TD class="r data">0.0491</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">243</TD>
+    <TD class="r data">28109</TD>
+    <TD class="r data">115.67344</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX75></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">10.75516</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.0158</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.0118</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">40.53867</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX76></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">26.53111</TD>
+    <TD class="r data">0.68712</TD>
+    <TD class="r data">38.61</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.13472</TD>
+    <TD class="r data">0.06812</TD>
+    <TD class="r data" noWrap>-1.98</TD>
+    <TD class="r data">0.0491</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX77></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel6.png"> </DIV></DIV><BR><A 
+name=IDX78></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatter plot of residuals by AgeC for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot6.png"> </DIV></DIV><BR><A 
+name=IDX79></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Scatterplot of Endurance by AgeC overlaid with the fit line, a 95% confidence band and lower and upper 95% prediction limits." 
+src="SAS%20Output_htm%23IDX118_files/FitPlot3.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX80></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX81></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">4750.68647</TD>
+    <TD class="r data">2375.34324</TD>
+    <TD class="r data">24.14</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">242</TD>
+    <TD class="r data">23810</TD>
+    <TD class="r data">98.38981</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX82></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">9.91916</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.1663</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.1594</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">37.38762</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX83></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">26.52838</TD>
+    <TD class="r data">0.63371</TD>
+    <TD class="r data">41.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.25709</TD>
+    <TD class="r data">0.06550</TD>
+    <TD class="r data" noWrap>-3.93</TD>
+    <TD class="r data">0.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.91631</TD>
+    <TD class="r data">0.13863</TD>
+    <TD class="r data">6.61</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX84></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel7.png"> </DIV></DIV><BR><A 
+name=IDX85></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 360px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot7.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX86></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX87></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Analysis of Variance" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22674</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX88></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Root MSE</TH>
+    <TD class="r data">9.69959</TD>
+    <TH class="l rowheader" scope=row>R-Square</TH>
+    <TD class="r data">0.2061</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Mean</TH>
+    <TD class="r data">26.53061</TD>
+    <TH class="l rowheader" scope=row>Adj R-Sq</TH>
+    <TD class="r data">0.1962</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Coeff Var</TH>
+    <TD class="r data">36.56000</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX89></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Parameter Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">25.88631</TD>
+    <TD class="r data">0.64663</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data" noWrap>-0.26185</TD>
+    <TD class="r data">0.06406</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.97254</TD>
+    <TD class="r data">0.13653</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeCxExerciseC</TH>
+    <TH class="r data">1</TH>
+    <TD class="r data">0.04724</TD>
+    <TD class="r data">0.01359</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX90></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel8.png"> </DIV></DIV><BR><A 
+name=IDX91></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot8.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX92></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle">&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Forward Selection: Step 
+0</TD></TR></TBODY></TABLE></DIV>
+<P>
+<P><A name=IDX93></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">First 2 Vars Entered: R-Square = 0.1663 and C(p) = 
+      14.0804</TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">4750.68647</TD>
+    <TD class="r data">2375.34324</TD>
+    <TD class="r data">24.14</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">242</TD>
+    <TD class="r data">23810</TD>
+    <TD class="r data">98.38981</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX94></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>&nbsp;</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Type&nbsp;II&nbsp;SS</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">26.52838</TD>
+    <TD class="r data">0.63371</TD>
+    <TD class="r data">172420</TD>
+    <TD class="r data">1752.42</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.25709</TD>
+    <TD class="r data">0.06550</TD>
+    <TD class="r data">1515.82496</TD>
+    <TD class="r data">15.41</TD>
+    <TD class="r data">0.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.91631</TD>
+    <TD class="r data">0.13863</TD>
+    <TD class="r data">4298.31088</TD>
+    <TD class="r data">43.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class="c b footer" 
+      colSpan=7>*&nbsp;Forced&nbsp;into&nbsp;the&nbsp;model&nbsp;by&nbsp;the&nbsp;INCLUDE=&nbsp;option</TH></TR></TFOOT></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Bounds on condition number: 1.0868, 
+  4.3473</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Forward Selection: Step 
+1</TD></TR></TBODY></TABLE></DIV>
+<P>
+<P><A name=IDX95></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Variable AgeCxExerciseC Entered: R-Square = 0.2061 
+      and C(p) = 4.0000</TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Analysis of Variance</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of<BR>Squares</TH>
+    <TH class="r b header" scope=col>Mean<BR>Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22674</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX96></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>&nbsp;</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>Parameter<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Standard<BR>Error</TH>
+    <TH class="r b header" scope=col>Type&nbsp;II&nbsp;SS</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88631</TD>
+    <TD class="r data">0.64663</TD>
+    <TD class="r data">150776</TD>
+    <TD class="r data">1602.60</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185</TD>
+    <TD class="r data">0.06406</TD>
+    <TD class="r data">1571.75569</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>*</TH>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254</TD>
+    <TD class="r data">0.13653</TD>
+    <TD class="r data">4774.05917</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>&nbsp;</TH>
+    <TH class="l rowheader" scope=row>AgeCxExerciseC</TH>
+    <TD class="r data">0.04724</TD>
+    <TD class="r data">0.01359</TD>
+    <TD class="r data">1136.54772</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class="c b footer" 
+      colSpan=7>*&nbsp;Forced&nbsp;into&nbsp;the&nbsp;model&nbsp;by&nbsp;the&nbsp;INCLUDE=&nbsp;option</TH></TR></TFOOT></TABLE></DIV></DIV><BR><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">Bounds on condition number: 1.1023, 
+  9.6122</TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=left>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle">All variables have been entered into the 
+  model.</TD></TR></TBODY></TABLE></DIV>
+<P><A name=IDX97></A>
+<DIV><BR>
+<P>
+<DIV align=center>
+<TABLE class=proctitle>
+  <TBODY>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="c proctitle"></TD></TR>
+  <TR>
+    <TD class="l proctitle"></TD></TR></TBODY></TABLE></DIV>
+<P>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Reg: Selection Summary" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Summary of Forward 
+      Selection</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Step</TH>
+    <TH class="l b header" scope=col>Variable<BR>Entered</TH>
+    <TH class="r b header" scope=col>Number<BR>Vars In</TH>
+    <TH class="r b header" scope=col>Partial<BR>R-Square</TH>
+    <TH class="r b header" scope=col>Model<BR>R-Square</TH>
+    <TH class="r b header" scope=col>C(p)</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">AgeCxExerciseC</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.2061</TD>
+    <TD class="r data">4.0000</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX98></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The REG Procedure</DIV>
+<DIV class="c proctitle">Model: MODEL1</DIV>
+<DIV class="c proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 640px; WIDTH: 640px" border=0 
+alt="Panel of fit diagnostics for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/DiagnosticsPanel9.png"> </DIV></DIV><BR><A 
+name=IDX99></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of scatterplots of residuals by regressors for Endurance." 
+src="SAS%20Output_htm%23IDX118_files/ResidualPlot9.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX100></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX101></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">&nbsp;</DIV>
+<DIV class="l proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of Squares</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22673.78622</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561.02041</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX102></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>R-Square</TH>
+    <TH class="r b header" scope=col>Coeff Var</TH>
+    <TH class="r b header" scope=col>Root MSE</TH>
+    <TH class="r b header" scope=col>Endurance&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.206128</TD>
+    <TD class="r data">36.56000</TD>
+    <TD class="r data">9.699593</TD>
+    <TD class="r data">26.53061</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX103></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall Effect Size" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Overall 
+  Noncentrality</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Min Var Unbiased Estimate</TH>
+    <TD class="l data">59.056</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Low MSE Estimate</TH>
+    <TD class="l data">58.562</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>95% Confidence Limits</TH>
+    <TD class="l data">(32.128,97.51)</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX104></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall Effect Size" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Proportion of Variation 
+      Accounted for</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Eta-Square</TH>
+    <TD class="l data">0.21</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Omega-Square</TH>
+    <TD class="l data">0.20</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>95% Confidence Limits</TH>
+    <TD class="l data">(0.12,0.28)</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX105></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type I Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" rowSpan=2 scope=col>Source</TH>
+    <TH class="r b header" rowSpan=2 scope=col>DF</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Type I SS</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Mean Square</TH>
+    <TH class="r b header" rowSpan=2 scope=col>F Value</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Pr&nbsp;&gt;&nbsp;F</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Noncentrality Parameter</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Total Variation Accounted 
+      For</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Partial Variation 
+      Accounted For</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Min Var Unbiased<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Low MSE Estimate</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence Limits</TH>
+    <TH class="r b header" scope=col>Semipartial Eta-Square</TH>
+    <TH class="r b header" scope=col>Semipartial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Conservative<BR>95% 
+      Confidence Limits</TH>
+    <TH class="r b header" scope=col>Partial Eta-Square</TH>
+    <TH class="r b header" scope=col>Partial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence 
+  Limits</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">4.81</TD>
+    <TD class="r data">0.0293</TD>
+    <TD class="r data">3.77</TD>
+    <TD class="r data">3.74</TD>
+    <TD class="r data">0.00</TD>
+    <TD class="r data">17.3</TD>
+    <TD class="r data">0.0158</TD>
+    <TD class="r data">0.0125</TD>
+    <TD class="r data">0.0000</TD>
+    <TD class="r data">0.0597</TD>
+    <TD class="r data">0.0196</TD>
+    <TD class="r data">0.0153</TD>
+    <TD class="r data">0.0000</TD>
+    <TD class="r data">0.0660</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">45.69</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">44.31</TD>
+    <TD class="r data">43.94</TD>
+    <TD class="r data">22.11</TD>
+    <TD class="r data">77.5</TD>
+    <TD class="r data">0.1505</TD>
+    <TD class="r data">0.1467</TD>
+    <TD class="r data">0.0767</TD>
+    <TD class="r data">0.2319</TD>
+    <TD class="r data">0.1594</TD>
+    <TD class="r data">0.1543</TD>
+    <TD class="r data">0.0828</TD>
+    <TD class="r data">0.2403</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD>
+    <TD class="r data">10.98</TD>
+    <TD class="r data">10.89</TD>
+    <TD class="r data">2.21</TD>
+    <TD class="r data">29.8</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.0364</TD>
+    <TD class="r data">0.0057</TD>
+    <TD class="r data">0.0977</TD>
+    <TD class="r data">0.0477</TD>
+    <TD class="r data">0.0433</TD>
+    <TD class="r data">0.0090</TD>
+    <TD class="r data">0.1084</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX106></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" rowSpan=2 scope=col>Source</TH>
+    <TH class="r b header" rowSpan=2 scope=col>DF</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Type III SS</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Mean Square</TH>
+    <TH class="r b header" rowSpan=2 scope=col>F Value</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Pr&nbsp;&gt;&nbsp;F</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Noncentrality Parameter</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Total Variation Accounted 
+      For</TH>
+    <TH class="c b header" colSpan=4 scope=colgroup>Partial Variation 
+      Accounted For</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Min Var Unbiased<BR>Estimate</TH>
+    <TH class="r b header" scope=col>Low MSE Estimate</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence Limits</TH>
+    <TH class="r b header" scope=col>Semipartial Eta-Square</TH>
+    <TH class="r b header" scope=col>Semipartial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Conservative<BR>95% 
+      Confidence Limits</TH>
+    <TH class="r b header" scope=col>Partial Eta-Square</TH>
+    <TH class="r b header" scope=col>Partial Omega-Square</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>95% Confidence 
+  Limits</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">15.6</TD>
+    <TD class="r data">15.4</TD>
+    <TD class="r data">4.37</TD>
+    <TD class="r data">36.9</TD>
+    <TD class="r data">0.0550</TD>
+    <TD class="r data">0.0516</TD>
+    <TD class="r data">0.0126</TD>
+    <TD class="r data">0.1188</TD>
+    <TD class="r data">0.0648</TD>
+    <TD class="r data">0.0602</TD>
+    <TD class="r data">0.0175</TD>
+    <TD class="r data">0.1310</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">49.3</TD>
+    <TD class="r data">48.9</TD>
+    <TD class="r data">25.57</TD>
+    <TD class="r data">84.2</TD>
+    <TD class="r data">0.1672</TD>
+    <TD class="r data">0.1633</TD>
+    <TD class="r data">0.0900</TD>
+    <TD class="r data">0.2498</TD>
+    <TD class="r data">0.1739</TD>
+    <TD class="r data">0.1688</TD>
+    <TD class="r data">0.0945</TD>
+    <TD class="r data">0.2558</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD>
+    <TD class="r data">11.0</TD>
+    <TD class="r data">10.9</TD>
+    <TD class="r data">2.21</TD>
+    <TD class="r data">29.8</TD>
+    <TD class="r data">0.0398</TD>
+    <TD class="r data">0.0364</TD>
+    <TD class="r data">0.0057</TD>
+    <TD class="r data">0.0977</TD>
+    <TD class="r data">0.0477</TD>
+    <TD class="r data">0.0433</TD>
+    <TD class="r data">0.0090</TD>
+    <TD class="r data">0.1084</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX107></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Solution" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88630854</TD>
+    <TD class="r data">0.64663327</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185368</TD>
+    <TD class="r data">0.06406483</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254170</TD>
+    <TD class="r data">0.13652678</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">0.04724474</TD>
+    <TD class="r data">0.01359293</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX108></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 540px" border=0 
+alt="Contour Fit Plot for Endurance" 
+src="SAS%20Output_htm%23IDX118_files/ContourFit2.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX109></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Analysis Variable : AgeC 
+    </TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.0036735</TD>
+    <TD class="r data">10.1069556</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX110></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">245</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">245</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX111></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">&nbsp;</DIV>
+<DIV class="l proctitle">Dependent Variable: Endurance </DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Overall ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Sum of Squares</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Model</TH>
+    <TD class="r data">3</TD>
+    <TD class="r data">5887.23419</TD>
+    <TD class="r data">1962.41140</TD>
+    <TD class="r data">20.86</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">241</TD>
+    <TD class="r data">22673.78622</TD>
+    <TD class="r data">94.08210</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Corrected Total</TH>
+    <TD class="r data">244</TD>
+    <TD class="r data">28561.02041</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX112></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>R-Square</TH>
+    <TH class="r b header" scope=col>Coeff Var</TH>
+    <TH class="r b header" scope=col>Root MSE</TH>
+    <TH class="r b header" scope=col>Endurance&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="r data">0.206128</TD>
+    <TD class="r data">36.56000</TD>
+    <TD class="r data">9.699593</TD>
+    <TD class="r data">26.53061</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX113></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type I Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Type I SS</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">452.375593</TD>
+    <TD class="r data">4.81</TD>
+    <TD class="r data">0.0293</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">4298.310880</TD>
+    <TD class="r data">45.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX114></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Type III SS</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">1571.755691</TD>
+    <TD class="r data">16.71</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">4774.059173</TD>
+    <TD class="r data">50.74</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">1136.547718</TD>
+    <TD class="r data">12.08</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX115></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Solution" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Parameter</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TD class="r data">25.88630854</TD>
+    <TD class="r data">0.64663327</TD>
+    <TD class="r data">40.03</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC</TH>
+    <TD class="r data" noWrap>-0.26185368</TD>
+    <TD class="r data">0.06406483</TD>
+    <TD class="r data" noWrap>-4.09</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExerciseC</TH>
+    <TD class="r data">0.97254170</TD>
+    <TD class="r data">0.13652678</TD>
+    <TD class="r data">7.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AgeC*ExerciseC</TH>
+    <TD class="r data">0.04724474</TD>
+    <TD class="r data">0.01359293</TD>
+    <TD class="r data">3.48</TD>
+    <TD class="r data">0.0006</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX116></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 540px" border=0 
+alt="Contour Fit Plot for Endurance" 
+src="SAS%20Output_htm%23IDX118_files/ContourFit3.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX117></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The PLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Plm: Store Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Store 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Item Store</TH>
+    <TD class="l data">WORK.GLMMODEL</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Created From</TH>
+    <TD class="l data">WORK.MODEX</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created By</TH>
+    <TD class="l data">PROC GLM</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Date Created</TH>
+    <TD class="l data">15OCT17:10:48:30</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Response Variable</TH>
+    <TD class="l data">Endurance</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Model Effects</TH>
+    <TD class="l data">Intercept AgeC ExerciseC 
+AgeC*ExerciseC</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX118></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Fit Panel for Endurance by ExerciseC with 95% Confidence and Prediction Limits" 
+src="SAS%20Output_htm%23IDX118_files/FitPanel2.png"> 
+</DIV></DIV><BR></DIV></BODY></HTML>
