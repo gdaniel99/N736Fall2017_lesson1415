@@ -1,4 +1,16 @@
 ﻿* Encoding: UTF-8.
+
+* ==========================================
+* N736: Lesson 15
+* by Melinda Higgins, dated Oct 17. 2017
+*
+* be sure to load the helpmkh.sav dataset
+* ==========================================.
+
+* GET 
+*   FILE='C:\MyGithub\N736Fall2017_lesson1415\helpmkh.sav'. 
+* DATASET NAME DataSet1 WINDOW=FRONT.
+
 * ==========================================
 * recode racegrp and substance variables
 * from character based to numerical coding with labels
